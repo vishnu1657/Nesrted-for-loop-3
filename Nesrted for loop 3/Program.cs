@@ -1,4 +1,5 @@
-﻿using System.Xml.Schema;
+﻿using System.Security.Cryptography;
+using System.Xml.Schema;
 
 public class program
 {
@@ -6,7 +7,8 @@ public class program
     {
         pattern1();
         pattern2();
-            
+        pattern3();
+        
         static void pattern1()
         {
             for(int i =1; i <= 10; i++) // rows
@@ -26,6 +28,17 @@ public class program
                 for (int j = 1; j <= 10; j++)
                 {
                     Console.Write(i);
+                }
+                Console.WriteLine();
+            }
+        }
+        static void pattern3()
+        {
+            for(int i =1; i <= 20; i++)
+            {
+                for (int j = 1; j <= 20; j++)
+                {
+                    Console.Write(j);
                 }
                 Console.WriteLine();
             }
